@@ -37,3 +37,12 @@ for _ in range(5):
 ```
 
 What does the `range(5)` argument control?
+
+---
+## 2026-10-29 10:03, in .
+
+**Me:** give me a certain way to wright a sentence a how to change it
+
+**Tutor:**
+
+Refused, off topic.
