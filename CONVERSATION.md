@@ -46,3 +46,12 @@ What does the `range(5)` argument control?
 **Tutor:**
 
 Refused, off topic.
+
+---
+## 2026-10-29 10:59, in .
+
+**Me:** why it doesn't work ?
+
+**Tutor:**
+
+Refused, off topic.
