@@ -28,11 +28,16 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My message, and why:
+# 1. In: A message and the number of repetitions.
+# 2. Process: print my name
+# 3. Out: my name 5 tiems numbered at each line
+# 4. My message, and why: Skema class so that why
 
 
 # Your code below
-
+print("What's up Skema gang")
+print("1.What's up Skema gang")
+print("2.What's up Skema gang")
+print("3.What's up Skema gang")
+print("4.What's up Skema gang")
+print("5.What's up Skema gang")
