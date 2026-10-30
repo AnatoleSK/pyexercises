@@ -27,11 +27,37 @@ CHECK IT YOURSELF
 DELIVERABLE
     This file, with your comments and your code.
 """
+# 1. In: The user's answer to a yes/no question.
 
-# 1. In:
-# 2. Process:
-# 3. Out:
+# 2. Process: Repeat the question until the answer is valid
+#    or five attempts have been used.
+
+# 3. Out: The number of attempts and the final decision.
+
 # 4. My stop condition, my attempt limit, my summary:
+#    Stop when the answer is "yes" or "no", or after 5 attempts.
+#    Accept capitals and surrounding spaces.
+#    The summary shows the attempt count and the user's decision,
+#    or a message if no valid answer was received.
 
+#Your code below
 
-# Your code below
+attempts = 2
+answer = ""
+
+while attempts < 5 and answer != "yes" and answer != "no":
+    answer = input("Do you want to continue? (yes/no): ")
+    answer = answer.strip().lower()
+    attempts = attempts + 1
+
+    if answer != "yes" and answer != "no":
+        print("Invalid input. Please enter 'yes' or 'no'.")
+
+print("Number of attempts:", attempts)
+
+if answer == "yes":
+    print("You chose to continue.")
+elif answer == "no":
+    print("You chose not to continue.")
+else:
+    print("Maximum attempts reached. No valid answer received.")
