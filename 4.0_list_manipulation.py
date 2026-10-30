@@ -33,31 +33,28 @@ DELIVERABLE
 
 
 # Your code below
-number_1 = 4
-number_2 = 6
-number_3 = 10
-number_4 = 2
-number_5 = 3
-number_6 = 12
-number_7 = 9
-number_8 = 15
+# 1. In: A list of quantities of shares purchased in ten orders.
 
-print(number_1)
-print(number_2)
-print(number_3)
-print(number_4)
-print(number_5)
-print(number_6)
-print(number_7)
-print(number_8)
+# 2. Process: Display the list, select the fourth quantity,
+#    sort the list and calculate the total.
 
-list = [4, 6, 10 ,2 ,3 ,12 ,9 ,15]
+# 3. Out: The whole list, the fourth quantity, the sorted list
+#    and the total number of shares purchased.
 
-print(list)
-print(list[3])
+# 4. What my list is about, and what I computed from it:
+#    My list represents quantities of shares purchased.
+#    The total measures the overall number of shares bought.
 
-list.sort()
-print("Sorted list:", list)
+# Manual check on the first three quantities:
+# 4 + 5 + 6 = 15.
 
-list.pop()
-print("List after removing last item:", list)
+quantities = [4, 5, 6, 7, 8, 9, 10, 11, 2, 1]
+
+print("Whole list:", quantities)
+print("Fourth quantity:", quantities[3])
+
+print("Check on three quantities:", sum(quantities[:3]))
+print("Total shares purchased:", sum(quantities))
+
+quantities.sort()
+print("Sorted list:", quantities)
