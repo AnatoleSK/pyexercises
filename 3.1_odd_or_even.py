@@ -24,11 +24,30 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. What happens on 0, on a negative number, on a very large number:
+# 1. In: An integer N entered by the user.
+# 2. Process: Check each number from 1 to N using division by 2.
+# 3. Out: Display whether each number is odd or even.
+# 4. Decisions:
+# - If N is 0: display an error message.
+# - If N is negative: display an error message.
+# - If N exceeds 100, including 5000: reject it.
 
+# Tests:
+# - 6: three odd numbers and three even numbers.
+# - 0 and -4: a positive number is requested.
+# - 5000: the maximum limit message is displayed.
 
-# Your code below
+N = int(input("Enter a number between 1 and 100: "))
 
+if N <= 0:
+    print("Please enter a positive number.")
+
+elif N > 100:
+    print("The number is too large. Maximum: 100.")
+
+else:
+    for number in range(1, N + 1):
+        if number % 2 == 0:
+            print(number, "is even")
+        else:
+            print(number, "is odd")
