@@ -73,3 +73,12 @@ Refused, off topic.
 **Tutor:**
 
 Refused, off topic.
+
+---
+## 2026-10-30 10:46, in .
+
+**Me:** missing a field ?
+
+**Tutor:**
+
+Refused, off topic.

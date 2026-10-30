@@ -24,10 +24,26 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
+# 1. In: The list of quantities from exercise 4.0.
+
+# 2. Process: Loop through the list, number each order
+#    and calculate its percentage of the total quantity.
+
+# 3. Out: One line per order showing its position,
+#    quantity and percentage of the total.
+
 # 4. What I compute for each item, and why it is worth showing:
+#    I calculate each order's share of the total quantity.
+#    This shows which orders represent the largest purchases.
 
+# Check: 10 items produce exactly 10 lines.
 
-# Your code below
+#Your code below:
+quantities = [4, 5, 6, 7, 8, 9, 10, 11, 2, 1]
+
+total = sum(quantities)
+
+for position, quantity in enumerate(quantities, start=1):
+    share = round(quantity / total * 100, 2)
+    print("Order:", position, "Quantity:", quantity,
+          "Share of total (%):", share)
