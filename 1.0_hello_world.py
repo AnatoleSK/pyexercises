@@ -35,9 +35,9 @@ DELIVERABLE
 
 
 # Your code below
-print("What's up Skema gang")
-print("1.What's up Skema gang")
-print("2.What's up Skema gang")
-print("3.What's up Skema gang")
-print("4.What's up Skema gang")
-print("5.What's up Skema gang")
+print("Hello Skema")
+print("1.Hello Skema")
+print("2.Hello Skema")
+print("3.Hello Skema")
+print("4.Hello Skema")
+print("5.Hello Skema")

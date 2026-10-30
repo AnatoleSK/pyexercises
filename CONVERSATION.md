@@ -55,3 +55,12 @@ Refused, off topic.
 **Tutor:**
 
 Refused, off topic.
+
+---
+## 2026-10-30 10:16, in .
+
+**Me:** how to print a sentence
+
+**Tutor:**
+
+Refused, off topic.
