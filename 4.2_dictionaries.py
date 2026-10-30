@@ -23,36 +23,55 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
+# 1. In: A customer's name, age, city, country and email.
+
+# 2. Process: Store the details in a dictionary, read the name,
+#    update the city, remove the age and display all fields.
+
+# 3. Out: The name, updated city, removed age and remaining fields.
+
 # 4. My object, my five fields, and why those:
+#    A customer described by:
+#    name: identify the customer.
+#    age: analyse customer age groups.
+#    city: identify the customer's local market.
+#    country: identify the customer's national market.
+#    email: contact the customer.
 
+# Missing field test:
+# customer["phone"] raises a KeyError because "phone" does not exist.
+# Using get() displays a default message instead of stopping.
 
-# Your code below
-name = input("Enter your name: ")
-age = input("Enter your age: ") 
-city = input("Enter your city: ")
-country = input("Enter your country: ")
+#Your code below:
 
-print("My name is ", name)
-print("My age is ", age)
-print("My city is ", city)
-print("My country is ", country)
+name = input("Enter the customer's name: ")
+age = input("Enter the customer's age: ")
+city = input("Enter the customer's city: ")
+country = input("Enter the customer's country: ")
+email = input("Enter the customer's email: ")
 
-
-person = {
+customer = {
     "name": name,
     "age": age,
     "city": city,
     "country": country,
-}   
+    "email": email
+}
 
-print("The person's name is: ", person["name"])
-print("The person's age is: ", person["age"])
-print("The person's city is: ", person["city"])
-print("The person's country is: ", person["country"])
+# Read one field
+print("Customer's name:", customer["name"])
 
-person_age = person.pop("age")
-print("The person's age was: ", person_age)
-print("The person's remaining fields are: ", person)
+# Change one field
+customer["city"] = input("Enter the customer's new city: ")
+print("Updated city:", customer["city"])
+
+# Remove one field
+customer_age = customer.pop("age")
+print("Customer's age was:", customer_age)
+
+# Safely read a field that does not exist
+print("Phone:", customer.get("phone", "Not provided"))
+
+# Display every remaining field and its value
+for field, value in customer.items():
+    print(field, ":", value)
