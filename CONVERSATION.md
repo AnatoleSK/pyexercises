@@ -64,3 +64,12 @@ Refused, off topic.
 **Tutor:**
 
 Refused, off topic.
+
+---
+## 2026-10-30 10:34, in .
+
+**Me:** quantites can be illimited ?
+
+**Tutor:**
+
+Refused, off topic.

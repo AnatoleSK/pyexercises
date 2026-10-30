@@ -25,10 +25,29 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
+# 1. In: The list of quantities from exercise 4.0.
+
+# 2. Process: Display the list in four orders without changing it.
+
+# 3. Out: Four orders, a comparison and the original list at the end.
+
 # 4. My four orders, and which ones modify the original:
+#    Original, ascending, descending and reversed.
+#    None modifies the original.
+#    sorted() and slicing create new lists.
+#    sort() and reverse() would modify the list in place.
 
 
 # Your code below
+
+
+quantities = [4, 5, 6, 7, 8, 9, 10, 11, 2, 1]
+original_copy = quantities.copy()
+
+print("Original order:", quantities)
+print("Ascending order:", sorted(quantities))
+print("Descending order:", sorted(quantities, reverse=True))
+print("Reversed order:", quantities[::-1])
+
+print("Original unchanged:", quantities == original_copy)
+print("Original list:", quantities)
